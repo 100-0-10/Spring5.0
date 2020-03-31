@@ -1,0 +1,20 @@
+package chap02;
+
+public class Greeter {
+	
+	private String format;
+	
+	public String greet(String guest) {
+		return String.format(format, guest);
+		
+	}
+	
+	public void setFormat(String format) {
+		this.format = format;
+	}
+	
+	Greeter greeter = new Greeter();
+	greeter.setFormat("%s, 안녕하세요!");
+	String msg = greeter.greet("스프링");
+
+}
